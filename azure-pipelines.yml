@@ -5,8 +5,8 @@ trigger:
  
 variables:
   azureSubscription: 'DevOpsDev'
-  webAppName: '$(appServiceName)'
-  environmentName: '$(appServiceName)'
+  webAppName: 'Nextjsy'
+  environmentName: 'Development'
   vmImageName: 'ubuntu-latest'
  
 stages:
