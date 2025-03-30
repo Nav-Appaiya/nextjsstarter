@@ -25,8 +25,8 @@ stages:
       displayName: 'Install Node.js'
  
     - script: |
-        yarn install
-        yarn build 
+        npm install
+        npm run build 
       displayName: 'yarn install and build'
  
     - task: ArchiveFiles@2
