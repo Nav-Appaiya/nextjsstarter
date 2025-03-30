@@ -72,5 +72,5 @@ stages:
             inputs:
               azureSubscription: $(azureSubscription)
               appType: 'webApp'
-              appName: 'phpappy'
+              appName: 'nextjsy'
               package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
