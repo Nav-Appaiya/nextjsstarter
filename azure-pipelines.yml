@@ -59,6 +59,6 @@ stages:
             inputs:
               azureSubscription: 'DevOpsDev'
               appType: 'webAppLinux'
-              appName: '$(appServiceName)'
+              appName: 'phpdev'
               package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
               runtimeStack: 'NODE|20-lts'
