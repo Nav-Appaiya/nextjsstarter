@@ -36,7 +36,7 @@ stages:
         path: '$(System.DefaultWorkingDirectory)/.next/cache'
       displayName: 'Cache .next/cache'
 
-    - script: npm run build
+    - script: npm i && npm run build
       displayName: 'Build'
 
     - task: ArchiveFiles@2
