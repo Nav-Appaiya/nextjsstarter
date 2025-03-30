@@ -7,7 +7,7 @@ variables:
   azureSubscription: 'DevOpsDev'
   webAppName: 'Nextjsy'
   environmentName: 'Development'
-  vmImageName: 'ubuntu-latest'
+  
  
 stages:
 - stage: Build
@@ -16,7 +16,7 @@ stages:
   - job: Build
     displayName: Build
     pool:
-      vmImage: $(vmImageName)
+      name: default
  
     steps:
     - task: NodeTool@0
@@ -50,7 +50,7 @@ stages:
     displayName: Deploy
     environment: $(environmentName)
     pool:
-      vmImage: $(vmImageName)
+      name: default
     strategy:
       runOnce:
         deploy:
@@ -61,4 +61,4 @@ stages:
               appType: 'webAppLinux'
               appName: '$(appServiceName)'
               package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
-              runtimeStack: 'NODE|18-lts'
+              runtimeStack: 'NODE|20-lts'
