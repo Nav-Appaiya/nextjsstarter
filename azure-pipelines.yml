@@ -62,4 +62,4 @@ stages:
               acrName: 'nappsy'
               containerAppName: 'appcon2'
               resourceGroup: 'MyResourceGroup'
-              location: 'uknorth'
+              location: 'westus2'
