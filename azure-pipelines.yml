@@ -60,6 +60,6 @@ stages:
               appSourcePath: '$(Build.SourcesDirectory)/'
               azureSubscription: 'DevOpsDev'
               acrName: 'nappsy'
-              containerAppName: 'appcon2'
+              containerAppName: 'conapp1'
               resourceGroup: 'MyResourceGroup'
               location: 'westus2'
